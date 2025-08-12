@@ -183,6 +183,18 @@
     </select>
   </div>
 
+  <!-- Pregunta 10 -->
+  <div class="question">
+    <label>10. ¿Cuál es la probabilidad de obtener exactamente <strong>0 premios</strong> <em>sin reemplazo</em>?</label><br/>
+    <select id="q10">
+      <option value="">Selecciona una opción</option>
+      <option value="correct">\(\frac{\binom{8}{3}}{\binom{10}{3}} = \frac{56}{120} \approx 0.4667\)</option>
+      <option value="wrong">\(\frac{7}{15} \approx 0.4667\)</option>
+      <option value="wrong">0.5333</option>
+      <option value="wrong">0.384</option>
+    </select>
+  </div>
+
   <button onclick="checkAnswers()">Verificar respuestas</button>
   <div id="results" style="margin-top:15px; display:none;"></div>
 </section>
@@ -198,11 +210,12 @@ function checkAnswers() {
     q6: "correct",
     q7: "correct",
     q8: "correct",
-    q9: "correct"
+    q9: "correct",
+    q10: "correct"
   };
 
   let score = 0;
-  const total = 9;
+  const total = 10;
   let feedback = "";
 
   for (let i = 1; i <= total; i++) {
