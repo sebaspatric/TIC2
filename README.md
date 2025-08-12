@@ -27,7 +27,7 @@ Además, se busca que los estudiantes usen combinatoria y permutaciones, aplique
 
 La actividad tributa a los siguientes OA del currículo nacional de matemáticas para 2° Medio:
 
-* **OA:** Utilizar permutaciones y la combinatoria sencilla para calcular probabilidades de eventos y resolver problemas.
+* **OA11:** Utilizar permutaciones y la combinatoria sencilla para calcular probabilidades de eventos y resolver problemas.
 * Resolver problemas utilizando estrategias tales como simplificar el problema, descomponerlo en subproblemas, buscar patrones y utilizar herramientas computacionales.
 
 ---

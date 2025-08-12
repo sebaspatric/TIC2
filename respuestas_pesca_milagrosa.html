@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pesca Milagrosa - Respuestas Esperadas</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background: #f9f9f9;
+  }
+  h1, h2 {
+    color: #004080;
+  }
+  section {
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  }
+  .formula {
+    background: #eef6fc;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #007acc;
+    font-size: 1.1em;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  ul li {
+    margin-bottom: 6px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Respuestas Esperadas - Pesca Milagrosa</h1>
+
+<section>
+  <h2>Datos generales</h2>
+  <ul>
+    <li>Total peces: \( N = 10 \)</li>
+    <li>Peces con premio: \( K = 2 \)</li>
+    <li>Peces sin premio: \( N - K = 8 \)</li>
+    <li>Extracciones: \( n = 3 \)</li>
+  </ul>
+
+  <h2>A) Sin reemplazo (sin devolver peces)</h2>
+  <p><strong>Espacio muestral:</strong></p>
+  <div class="formula">\[
+  \binom{10}{3} = 120
+  \]</div>
+
+  <p><strong>Probabilidad exactamente 1 premio:</strong></p>
+  <div class="formula">\[
+  P(X=1) = \frac{\binom{2}{1} \cdot \binom{8}{2}}{\binom{10}{3}} = \frac{2 \times 28}{120} = \frac{56}{120} = \frac{7}{15} \approx 0.4667
+  \]</div>
+
+  <p><strong>Probabilidad exactamente 2 premios:</strong></p>
+  <div class="formula">\[
+  P(X=2) = \frac{\binom{2}{2} \cdot \binom{8}{1}}{\binom{10}{3}} = \frac{1 \times 8}{120} = \frac{8}{120} = \frac{1}{15} \approx 0.0667
+  \]</div>
+
+  <p><strong>Probabilidad al menos 1 premio:</strong></p>
+  <div class="formula">\[
+  P(X \geq 1) = 1 - P(0) = 1 - \frac{\binom{8}{3}}{\binom{10}{3}} = 1 - \frac{56}{120} = \frac{64}{120} = \frac{8}{15} \approx 0.5333
+  \]</div>
+
+  <h2>B) Con reemplazo (se devuelven peces)</h2>
+  <p><strong>Espacio muestral:</strong></p>
+  <div class="formula">\[
+  10^3 = 1000
+  \]</div>
+
+  <p><strong>Probabilidad exactamente 1 premio (binomial):</strong></p>
+  <div class="formula">\[
+  P(X=1) = \binom{3}{1} \cdot \left(\frac{2}{10}\right)^1 \cdot \left(\frac{8}{10}\right)^2 = 3 \times 0.2 \times 0.64 = 0.384
+  \]</div>
+
+  <p><strong>Probabilidad exactamente 2 premios:</strong></p>
+  <div class="formula">\[
+  P(X=2) = \binom{3}{2} \cdot \left(\frac{2}{10}\right)^2 \cdot \left(\frac{8}{10}\right)^1 = 3 \times 0.04 \times 0.8 = 0.096
+  \]</div>
+
+  <p><strong>Probabilidad al menos 1 premio:</strong></p>
+  <div class="formula">\[
+  P(X \geq 1) = 1 - P(0) = 1 - \left(\frac{8}{10}\right)^3 = 1 - 0.512 = 0.488
+  \]</div>
+
+  <h2>Interpretación</h2>
+  <p>Sin reemplazo las probabilidades de premio son ligeramente mayores debido a que la extracción modifica el conjunto disponible.</p>
+  <p>Con reemplazo cada extracción es independiente y la probabilidad no varía.</p>
+  <p>La diferencia debe ser observada y discutida para consolidar la comprensión.</p>
+
+</section>
+<p><a href="pesca_milagrosa.html" target="_blank" rel="noopener noreferrer">
+Volver a la actividad principal (se abre en nueva pestaña)</a></p>
+
+<p><a href="pesca_milagrosa_con_cuestionario.html" target="_blank" rel="noopener noreferrer">
+Volver a la actividad principal con cuestionario (se abre en nueva pestaña)</a></p>
+
+</body>
+</html>

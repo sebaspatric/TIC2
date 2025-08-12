@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Actividad “Pesca Milagrosa” – Explicación, Cuestionario y Respuestas</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background: #f9f9f9;
+  }
+  h1, h2, h3 {
+    color: #004080;
+  }
+  section {
+    background: #fff;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  }
+  .formula {
+    background: #eef6fc;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #007acc;
+    font-size: 1.1em;
+  }
+  .question {
+    margin-top: 20px;
+  }
+  button {
+    background-color: #007acc;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  button:hover {
+    background-color: #005f99;
+  }
+  #results {
+    margin-top: 15px;
+    padding: 10px;
+    background: #d9f0d9;
+    border: 1px solid #60b060;
+    border-radius: 5px;
+    display: none;
+  }
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<h1>Actividad “Pesca Milagrosa” – Explicación y Respuestas Esperadas</h1>
+
+<section>
+  <h2>Cuestionario sobre Pesca Milagrosa: Probabilidades con y sin reemplazo</h2>
+
+ 
+
+  <!-- Pregunta 1: espacio muestral sin reemplazo -->
+  <div class="question">
+    <label>1. ¿Cuál es el tamaño del espacio muestral para 3 extracciones <em>sin reemplazo</em>?</label><br/>
+    <select id="q1">
+      <option value="">Selecciona una opción</option>
+      <option value="correct">120</option>
+      <option value="wrong">1000</option>
+      <option value="wrong">8</option>
+      <option value="wrong">10</option>
+    </select>
+  </div>
+
+  <!-- Pregunta 2: espacio muestral con reemplazo -->
+  <div class="question">
+    <label>2. ¿Cuál es el tamaño del espacio muestral para 3 extracciones <em>con reemplazo</em>?</label><br/>
+    <select id="q2">
+      <option value="">Selecciona una opción</option>
+      <option value="correct">1000</option>
+      <option value="wrong">120</option>
+      <option value="wrong">30</option>
+      <option value="wrong">10</option>
+    </select>
+  </div>
+
+  <!-- Pregunta 3 -->
+  <div class="question">
+    <label>3. ¿Cuál es la probabilidad de obtener exactamente <strong>1 premio</strong> <em>sin reemplazo</em>?</label><br/>
+    <select id="q3">
+      <option value="">Selecciona una opción</option>
+      <option value="correct">7/15 (≈ 0.4667)</option>
+      <option value="wrong">1/15 (≈ 0.0667)</option>
+      <option value="wrong">8/15 (≈ 0.5333)</option>
+      <option value="wrong">0.384</option>
+    </select>
+  </div>
+
+  <!-- Pregunta 4 -->
+  <div class="question">
+    <label>4. ¿Cuál es la probabilidad de obtener exactamente <strong>2 premios</strong> <em>sin reemplazo</em>?</label><br/>
+    <select id="q4">
+      <option value="">Selecciona una opción</option>
+      <option value="correct">1/15 (≈ 0.0667)</option>
+      <option value="wrong">7/15 (≈ 0.4667)</option>
+      <option value="wrong">0.096</option>
+      <option value="wrong">0.5333</option>
+    </select>
+  </div>
+
+  <!-- Pregunta 5 -->
+  <div class="question">
+    <label>5. ¿Cuál es la probabilidad de obtener <strong>al menos 1 premio</strong> <em>sin reemplazo</em>?</label><br/>
+    <select id="q5">
+      <option value="">Selecciona una opción</option>
+      <option value="correct">8/15 (≈ 0.5333)</option>
+      <option value="wrong">7/15 (≈ 0.4667)</option>
+      <option value="wrong">0.384</option>
+      <option value="wrong">1/15 (≈ 0.0667)</option>
+    </select>
+  </div>
+
+  <!-- Pregunta 6 -->
+  <div class="question">
+    <label>6. ¿Cuál es la probabilidad de obtener exactamente <strong>1 premio</strong> <em>con reemplazo</em>?</label><br/>
+    <select id="q6">
+      <option value="">Selecciona una opción</option>
+      <option value="correct">0.384</option>
+      <option value="wrong">0.0667</option>
+      <option value="wrong">0.5333</option>
+      <option value="wrong">0.488</option>
+    </select>
+  </div>
+
+  <!-- Pregunta 7 -->
+  <div class="question">
+    <label>7. ¿Cuál es la probabilidad de obtener exactamente <strong>2 premios</strong> <em>con reemplazo</em>?</label><br/>
+    <select id="q7">
+      <option value="">Selecciona una opción</option>
+      <option value="correct">0.096</option>
+      <option value="wrong">0.384</option>
+      <option value="wrong">0.5333</option>
+      <option value="wrong">1/15</option>
+    </select>
+  </div>
+
+  <!-- Pregunta 8 -->
+  <div class="question">
+    <label>8. ¿Cuál es la probabilidad de obtener <strong>al menos 1 premio</strong> <em>con reemplazo</em>?</label><br/>
+    <select id="q8">
+      <option value="">Selecciona una opción</option>
+      <option value="correct">0.488</option>
+      <option value="wrong">0.384</option>
+      <option value="wrong">7/15</option>
+      <option value="wrong">0.0667</option>
+    </select>
+  </div>
+
+  <!-- Pregunta 9 -->
+  <div class="question">
+    <label>9. ¿Por qué las probabilidades de obtener premios cambian entre los casos con y sin reemplazo?</label><br/>
+    <select id="q9">
+      <option value="">Selecciona una opción</option>
+      <option value="correct">Porque sin reemplazo el conjunto de peces cambia después de cada extracción, afectando las probabilidades.</option>
+      <option value="wrong">Porque con reemplazo no hay peces premiados.</option>
+      <option value="wrong">Porque con reemplazo siempre se extraen peces nuevos del mar.</option>
+      <option value="wrong">Porque sin reemplazo los peces siempre vuelven al recipiente.</option>
+    </select>
+  </div>
+
+  <button onclick="checkAnswers()">Verificar respuestas</button>
+  <div id="results" style="margin-top:15px; display:none;"></div>
+</section>
+
+<script>
+function checkAnswers() {
+  const correctAnswers = {
+    q1: "correct",
+    q2: "correct",
+    q3: "correct",
+    q4: "correct",
+    q5: "correct",
+    q6: "correct",
+    q7: "correct",
+    q8: "correct",
+    q9: "correct"
+  };
+
+  let score = 0;
+  const total = 9;
+  let feedback = "";
+
+  for (let i = 1; i <= total; i++) {
+    const q = "q" + i;
+    const val = document.getElementById(q).value;
+    if (val === "correct") {
+      score++;
+      feedback += `<p><strong>Pregunta ${i}:</strong> Correcto</p>`;
+    } else if(val === "") {
+      feedback += `<p><strong>Pregunta ${i}:</strong> No respondida</p>`;
+    } else {
+      feedback += `<p><strong>Pregunta ${i}:</strong> Incorrecto</p>`;
+    }
+  }
+
+  feedback += `<p><strong>Puntaje total: ${score} de ${total}</strong></p>`;
+
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = feedback;
+  resultsDiv.style.display = "block";
+}
+</script>
+
+
+</body>
+
+<p><a href="respuestas_pesca_milagrosa.html" target="" rel="noopener noreferrer">
+Ver respuestas esperadas (se abre en nueva pestaña)</a></p>
+
+</html>
+
