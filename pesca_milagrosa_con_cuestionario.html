@@ -188,8 +188,8 @@
     <label>10. ¿Cuál es la probabilidad de obtener exactamente <strong>0 premios</strong> <em>sin reemplazo</em>?</label><br/>
     <select id="q10">
       <option value="">Selecciona una opción</option>
-      <option value="correct">\(\frac{\binom{8}{3}}{\binom{10}{3}} = \frac{56}{120} \approx 0.4667\)</option>
-      <option value="wrong">\(\frac{7}{15} \approx 0.4667\)</option>
+      <option value="correct">0.4667</option>
+      <option value="wrong">0.667</option>
       <option value="wrong">0.5333</option>
       <option value="wrong">0.384</option>
     </select>
@@ -237,8 +237,14 @@ function checkAnswers() {
   resultsDiv.innerHTML = feedback;
   resultsDiv.style.display = "block";
 }
-</script>
 
+  MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)'], ['$', '$']]
+    }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 </body>
 
